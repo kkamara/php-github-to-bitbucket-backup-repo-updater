@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      args:
+        user: appuser
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: phpds
+    container_name: phpds-app
+    command: php src/script.php --foo=two --bar=four
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - phpds
+networks:
+  phpds:
+    driver: bridge
