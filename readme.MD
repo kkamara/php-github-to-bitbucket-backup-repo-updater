@@ -29,4 +29,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
+[BSD](https://opensource.org/licenses/BSD-3-Clause)
