@@ -15,10 +15,7 @@ class MainClass
     }
 
     public function handle() {
-        $args = getopt('f:b:', array(
-            'foo::', 
-            'bar::'
-        ));
+        $args = getopt('f:b:', ['foo::', 'bar::',]);
 
         var_dump($args);
         echo "success".PHP_EOL;
