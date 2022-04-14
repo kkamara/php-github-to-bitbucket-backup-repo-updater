@@ -12,7 +12,7 @@ services:
     container_name: phpds-app
     command: >
       bash -c "composer install
-      && php src/script.php --foo=two --bar=four"
+      && php src/MainClass.php --foo=two --bar=four"
     working_dir: /var/www/
     volumes:
       - ./:/var/www
