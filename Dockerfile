@@ -7,7 +7,6 @@ ARG uid
 # replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-
 # update the repository sources list
 # and install dependencies
 RUN apt-get update \
@@ -16,7 +15,7 @@ RUN apt-get update \
 
 # nvm environment variables
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 14.8.0
+ENV NODE_VERSION 17
 
 # install nvm
 # https://github.com/creationix/nvm#install-script
@@ -51,12 +50,15 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
+COPY . .
+
+RUN composer install
+
 # Create system user to run Composer and Artisan Commands
 RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p /home/$user/.composer && \
     chown -R $user:$user /home/$user
 
-# Set working directory
 WORKDIR /var/www
 
 USER $user
