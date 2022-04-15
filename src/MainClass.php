@@ -2,7 +2,7 @@
 
 namespace App;
 
-require_once('vendor/autoload.php');
+require_once(realpath(__DIR__.'/../vendor/autoload.php'));
 
 use GuzzleHttp\Client;
 
@@ -18,6 +18,12 @@ class MainClass
         $args = getopt('f:b:', ['foo::', 'bar::',]);
 
         var_dump($args);
+        
+        $this->http->get(
+            'https://downloads.slack-edge.com/linux_releases/slack-desktop-4.16.0-amd64.deb',
+            ['sink' => realpath(__DIR__.'/../tmp/').'/slack.deb'],
+        );
+
         echo "success".PHP_EOL;
     }
 }
