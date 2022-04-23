@@ -28,9 +28,9 @@ class MainClass
 
             echo "success".PHP_EOL;
         } catch (RequestException $e) {
-            echo print_r($e->getMessage());
-            echo print_r($e->getResponse()->getStatusCode());
-            echo print_r($e->getResponse()->getBody());
+            echo print_r($e->getMessage(), true);
+            echo print_r($e->getResponse()->getStatusCode(), true);
+            echo print_r($e->getResponse()->getBody(), true);
         }
     }
 }
