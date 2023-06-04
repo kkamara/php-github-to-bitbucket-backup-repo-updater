@@ -1,6 +1,6 @@
 # PhP Docker Skeleton
 
-Do you just want to build a script using php and docker? This is a bare app that's ready for you to get started.
+(2020) Get started with php and docker.
 
 ## Installation
 
