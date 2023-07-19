@@ -6,6 +6,10 @@
 
 Make sure you have [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
+```bash
+composer i
+```
+
 ## Using Linux?
 
 ```
@@ -18,6 +22,12 @@ make stop  # stop your docker container
 ```
 .\ps\run.ps1 start # build & run your script
 .\ps\run.ps1 stop  # stop your docker container
+```
+
+## Usage
+
+```
+php src/MainClass.php -f=foo --bar=baz
 ```
 
 ## Want to use Python instead? 
