@@ -4,30 +4,30 @@
 
 ## Installation
 
-Make sure you have [Docker Compose](https://docs.docker.com/compose/install/) installed.
+If you're using Docker make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
 ```bash
 composer i
 ```
 
-## Using Linux?
+## Usage
 
+```bash
+php src/MainClass.php -f="foo" --bar="baz"
 ```
+
+## Using Linux with Docker?
+
+```bash
 make start # build & run your script
 make stop  # stop your docker container
 ```
 
-## Using Windows?
+## Using Windows with Docker?
 
-```
+```bash
 .\ps\run.ps1 start # build & run your script
 .\ps\run.ps1 stop  # stop your docker container
-```
-
-## Usage
-
-```
-php src/MainClass.php -f=foo --bar=baz
 ```
 
 ## Want to use Python instead? 
