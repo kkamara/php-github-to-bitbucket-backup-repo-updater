@@ -4,9 +4,13 @@
 
 ## Installation
 
+* [PHP and MySQL](https://www.apachefriends.org/download.html)
+* [Composer](https://getcomposer.org/)
+
 If you're using Docker make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
 ```bash
+# composer install
 composer i
 ```
 
