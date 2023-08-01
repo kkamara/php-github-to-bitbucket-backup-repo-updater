@@ -6,8 +6,9 @@ require_once(realpath(__DIR__.'/../vendor/autoload.php'));
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use stdClass;
 
-class MainClass
+class MainClass extends stdClass
 {
     protected $http = null;
 
