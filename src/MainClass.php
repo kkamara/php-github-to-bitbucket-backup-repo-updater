@@ -2,7 +2,7 @@
 
 namespace App;
 
-require_once(realpath(__DIR__.'/../vendor/autoload.php'));
+require_once(__DIR__.'/../vendor/autoload.php');
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
@@ -24,7 +24,7 @@ class MainClass extends stdClass
         try {
             $this->http->get(
                 'https://downloads.slack-edge.com/linux_releases/slack-desktop-4.16.0-amd64.deb',
-                ['sink' => realpath(__DIR__.'/../tmp/').'/slack.deb'],
+                ['sink' => __DIR__.'/../tmp/slack.deb'],
             );
 
             echo "success".PHP_EOL;
