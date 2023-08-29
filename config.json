@@ -1,13 +1,13 @@
 {
   "repos": {
-    "github-to-bitbucket-backup-repo-updater": {
+    "ghbbupdater": {
       "github": {
-        "origin": "https://github.com/kkamara/github-to-bitbucket-backup-repo-updater",
-        "branch": "develop"
+        "origin": "https://github.com/kkamara/ghbbupdater",
+        "branch": "main"
       },
       "bitbucket": {
-        "origin": "git@bitbucket.org:kkamara2/github-to-bitbucket-backup-repo-updater",
-        "branch": "develop"
+        "origin": "git@bitbucket.org:kkamara2/ghbbupdater",
+        "branch": "main"
       }
     },
     "kkamara": {
