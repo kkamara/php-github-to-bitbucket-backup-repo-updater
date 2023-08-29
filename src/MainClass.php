@@ -54,7 +54,19 @@ class MainClass extends stdClass
             $keys = array_keys($config['repos']);
             for($i = 0; $i < sizeof($keys); $i++) {
                 $repoName = $keys[$i];
-                echo $repoName.PHP_EOL;
+                echo "Updating repo: $repoName".PHP_EOL;
+
+                exec(
+                    "git clone " . 
+                    $config['repos'][$repoName]
+                        ['github']
+                        ['origin'] . " " .
+                    implode("/", [
+                        getcwd(),
+                        "bitbucket",
+                        $repoName
+                    ])
+                );
             }
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
