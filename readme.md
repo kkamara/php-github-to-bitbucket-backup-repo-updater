@@ -44,7 +44,10 @@ make stop  # stop your docker container
 .\ps\run.ps1 stop  # stop your docker container
 ```
 
-## Want to use Python instead? 
+## More
+
+[PHP Docker Skeleton](https://github.com/kkamara/php-docker-skeleton)
+
 [Python Docker Skeleton](https://github.com/kkamara/python-docker-skeleton)
 
 ## Contributing
