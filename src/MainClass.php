@@ -90,7 +90,8 @@ class MainClass extends stdClass
                 echo "Pushing to bitbucket " .
                     $config['repos'][$repoName]
                         ['bitbucket']
-                        ['branch'];
+                        ['branch'] .
+                        PHP_EOL;
 
                 exec(
                     "git push bitbucket " .
@@ -109,10 +110,42 @@ class MainClass extends stdClass
                     "..",
                     ".."
                 ]));
+
+                $this->repoCleanup($repoName);
+
+                echo "Successfully updated repo: $repoName" .
+                    PHP_EOL;
             }
+
+            $this->cleanup();
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
         }
+    }
+
+    protected function repoCleanup($repoName) {
+        $fullRepoPath = implode("/", [
+            getcwd(),
+            "bitbucket",
+            $repoName
+        ]);
+        echo "Removing directory " .
+            $fullRepoPath . PHP_EOL;
+        exec("rm -rf $fullRepoPath");
+        echo "Removed directory " .
+            $fullRepoPath . PHP_EOL;
+    }
+
+    protected function cleanup() {
+        $fullBitbucketPath = implode("/", [
+            getcwd(),
+            "bitbucket"
+        ]);
+        echo "Removing directory " .
+            $fullBitbucketPath . PHP_EOL;
+        exec("rm -rf $fullBitbucketPath");
+        echo "Removed directory " .
+            $fullBitbucketPath . PHP_EOL;
     }
 }
 
