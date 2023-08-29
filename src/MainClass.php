@@ -50,6 +50,12 @@ class MainClass extends stdClass
                 ])),
                 true
             );
+
+            $keys = array_keys($config['repos']);
+            for($i = 0; $i < sizeof($keys); $i++) {
+                $repoName = $keys[$i];
+                echo $repoName.PHP_EOL;
+            }
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
         }
