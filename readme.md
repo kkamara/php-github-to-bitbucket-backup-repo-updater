@@ -1,6 +1,6 @@
 <img src="https://github.com/kkamara/useful/raw/main/MainClass.png" alt="MainClass.png" width=""/>
 
-# ghbbupdater
+# github-to-bitbucket-backup-repo-updater
 
 :computer: (29-Aug-2023) Compatible with Windows, MacOS & Linux.
 
