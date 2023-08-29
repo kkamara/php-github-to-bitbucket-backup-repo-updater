@@ -1,4 +1,17 @@
 {
+    "name": "kkamara/ghbbupdater",
+    "version": "1.0.0",
+    "description": ":computer: (29-Aug-2023) Compatible with Windows, MacOS & Linux.",
+    "authors": [
+        {
+            "name": "Kelvin Kamara",
+            "email": "kamaracomputers@gmail.com",
+            "homepage": "https://www.github.com/kkamara",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/kkamara/ghbbupdater",
+    "license": "BSD-3-Clause",
     "scripts": {
         "start": [
             "@php src/MainClass.php"
