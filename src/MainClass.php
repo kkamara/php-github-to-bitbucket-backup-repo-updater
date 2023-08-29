@@ -8,6 +8,8 @@ require_once(__DIR__.'/../vendor/autoload.php');
 use Exception;
 use stdClass;
 
+set_time_limit(1200); // 20 minutes.
+
 class MainClass extends stdClass
 {
     protected string $version = "1.0.0";
