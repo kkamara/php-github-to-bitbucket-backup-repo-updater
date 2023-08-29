@@ -37,6 +37,9 @@ class MainClass extends stdClass
                 );
             }
             mkdir($bitbucketDir);
+
+            echo "Created directory: $bitbucketDir" .
+                PHP_EOL;
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
         }
