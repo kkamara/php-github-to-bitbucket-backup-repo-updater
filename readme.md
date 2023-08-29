@@ -1,8 +1,15 @@
 <img src="https://github.com/kkamara/useful/raw/main/MainClass.png" alt="MainClass.png" width=""/>
 
-# PhP Docker Skeleton
+# ghbbupdater
 
-(2020) Get started with php and docker.
+:computer: (29-Aug-2023) Compatible with Windows, MacOS & Linux.
+
+## Quickstart
+
+```bash
+composer i
+composer start
+```
 
 ## Installation
 
@@ -19,7 +26,8 @@ composer i
 ## Usage
 
 ```bash
-php src/MainClass.php -f="foo" --bar="baz"
+# php src/MainClass.php
+composer start
 ```
 
 ## Using Linux with Docker?
