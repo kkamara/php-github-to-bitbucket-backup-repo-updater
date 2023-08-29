@@ -7,6 +7,8 @@
 ## Quickstart
 
 ```bash
+# Set a config.json in your current working directory at your terminal.
+composer require kkamara/ghbbupdater
 composer i
 composer start
 ```
@@ -18,7 +20,27 @@ composer start
 
 If you're using Docker make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
+Update `config.json` with your github and bitbucket remote urls for your repos.
+
+```json
+{
+  "repos": {
+    "kelvinkamara.com": {
+      "github": {
+        "origin": "https://github.com/kkamara/kelvinkamara.com",
+        "branch": "develop"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/kelvinkamara.com",
+        "branch": "develop"
+      }
+    }
+  }
+}
+```
+
 ```bash
+composer require kkamara/ghbbupdater
 # composer install
 composer i
 ```
