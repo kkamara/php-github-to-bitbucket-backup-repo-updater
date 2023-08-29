@@ -13,6 +13,8 @@ class MainClass extends stdClass
 
     protected string $appName = "Github to Bitbucket Backup Repo Updater";
 
+    protected Array|null $out = null;
+
     public function __construct() {}
 
     public function handle() {        
@@ -40,6 +42,14 @@ class MainClass extends stdClass
 
             echo "Created directory: $bitbucketDir" .
                 PHP_EOL;
+            
+            $config = json_decode(
+                file_get_contents(implode('/', [
+                    getcwd(),
+                    'config.json'
+                ])),
+                true
+            );
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
         }

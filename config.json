@@ -1,0 +1,114 @@
+{
+  "repos": {
+    "github-to-bitbucket-backup-repo-updater": {
+      "github": {
+        "origin": "https://github.com/kkamara/github-to-bitbucket-backup-repo-updater",
+        "branch": "develop"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/github-to-bitbucket-backup-repo-updater",
+        "branch": "develop"
+      }
+    },
+    "kkamara": {
+      "github": {
+        "origin": "https://github.com/kkamara/kkamara",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/kkamara",
+        "branch": "main"
+      }
+    },
+    "useful": {
+      "github": {
+        "origin": "https://github.com/kkamara/useful",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/useful",
+        "branch": "main"
+      }
+    },
+    "kelvinkamara.com": {
+      "github": {
+        "origin": "https://github.com/kkamara/kelvinkamara.com",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/kelvinkamara.com",
+        "branch": "main"
+      }
+    },
+    "premium-artist-cms-template": {
+      "github": {
+        "origin": "https://github.com/kkamara/premium-artist-cms-template",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/premium-artist-cms-template",
+        "branch": "main"
+      }
+    },
+    "artist": {
+      "github": {
+        "origin": "https://github.com/kkamara/artist",
+        "branch": "master"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/artist",
+        "branch": "master"
+      }
+    },
+    "nodejs-react-boilerplate": {
+      "github": {
+        "origin": "https://github.com/kkamara/nodejs-react-boilerplate",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/nodejs-react-boilerplate",
+        "branch": "main"
+      }
+    },
+    "nodejs-crm": {
+      "github": {
+        "origin": "https://github.com/kkamara/nodejs-crm",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/nodejs-crm",
+        "branch": "main"
+      }
+    },
+    "nodejs-crm-desktop": {
+      "github": {
+        "origin": "https://github.com/kkamara/nodejs-crm-desktop",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/nodejs-crm-desktop",
+        "branch": "main"
+      }
+    },
+    "python-docker-skeleton": {
+      "github": {
+        "origin": "https://github.com/kkamara/python-docker-skeleton",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/python-docker-skeleton",
+        "branch": "main"
+      }
+    },
+    "playground": {
+      "github": {
+        "origin": "https://github.com/kkamara/playground",
+        "branch": "main"
+      },
+      "bitbucket": {
+        "origin": "git@bitbucket.org:kkamara2/playground",
+        "branch": "main"
+      }
+    }
+  }
+}
