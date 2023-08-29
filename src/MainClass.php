@@ -3,7 +3,7 @@
 
 namespace App;
 
-require_once(__DIR__.'/../vendor/autoload.php');
+require_once(__DIR__."/../vendor/autoload.php");
 
 use Exception;
 use stdClass;
@@ -23,10 +23,10 @@ class MainClass extends stdClass
     public function handle() {        
         try {
             $bitbucketDir = implode(
-                '/', 
+                "/", 
                 [
                     getcwd(), 
-                    'bitbucket',
+                    "bitbucket",
                 ]
             );
             echo "Making bitbucket directory: " .
@@ -47,23 +47,23 @@ class MainClass extends stdClass
                 PHP_EOL;
             
             $config = json_decode(
-                file_get_contents(implode('/', [
+                file_get_contents(implode("/", [
                     getcwd(),
-                    'config.json'
+                    "config.json"
                 ])),
                 true
             );
 
-            $keys = array_keys($config['repos']);
+            $keys = array_keys($config["repos"]);
             for($i = 0; $i < sizeof($keys); $i++) {
                 $repoName = $keys[$i];
                 echo "Updating repo: $repoName".PHP_EOL;
 
                 exec(
                     "git clone " . 
-                    $config['repos'][$repoName]
-                        ['github']
-                        ['origin'] . " " .
+                    $config["repos"][$repoName]
+                        ["github"]
+                        ["origin"] . " " .
                     implode("/", [
                         getcwd(),
                         "bitbucket",
@@ -79,9 +79,9 @@ class MainClass extends stdClass
 
                 exec(
                     "git remote add bitbucket " .
-                        $config['repos'][$repoName]
-                            ['bitbucket']
-                            ['origin'], 
+                        $config["repos"][$repoName]
+                            ["bitbucket"]
+                            ["origin"], 
                     $this->out
                 );
                 echo "Git replied: " . 
@@ -90,16 +90,16 @@ class MainClass extends stdClass
                 $this->out = null;
                 
                 echo "Pushing to bitbucket " .
-                    $config['repos'][$repoName]
-                        ['bitbucket']
-                        ['branch'] .
+                    $config["repos"][$repoName]
+                        ["bitbucket"]
+                        ["branch"] .
                         PHP_EOL;
 
                 exec(
                     "git push bitbucket " .
-                        $config['repos'][$repoName]
-                            ['bitbucket']
-                            ['branch'], 
+                        $config["repos"][$repoName]
+                            ["bitbucket"]
+                            ["branch"], 
                     $this->out
                 );
                 echo "Git replied: " . 
