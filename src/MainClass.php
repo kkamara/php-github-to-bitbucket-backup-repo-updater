@@ -27,7 +27,7 @@ class MainClass extends stdClass
                 ]
             );
             echo "Making bitbucket directory: " .
-                $bitbucketDir.PHP_EOL;
+                $bitbucketDir . PHP_EOL;
             $bitbucketDirExists = true === file_exists($bitbucketDir);
             echo "Directory already exists? " . 
                 ($bitbucketDirExists ? "true" : "false") .
@@ -67,6 +67,47 @@ class MainClass extends stdClass
                         $repoName
                     ])
                 );
+
+                chdir(implode("/", [
+                    getcwd(),
+                    "bitbucket",
+                    $repoName
+                ]));
+
+                exec(
+                    "git remote add bitbucket " .
+                        $config['repos'][$repoName]
+                            ['bitbucket']
+                            ['origin'], 
+                    $this->out
+                );
+                echo "Git replied: " . 
+                    implode("\n", $this->out) .
+                    PHP_EOL;
+                $this->out = null;
+                
+                echo "Pushing to bitbucket " .
+                    $config['repos'][$repoName]
+                        ['bitbucket']
+                        ['branch'];
+
+                exec(
+                    "git push bitbucket " .
+                        $config['repos'][$repoName]
+                            ['bitbucket']
+                            ['branch'], 
+                    $this->out
+                );
+                echo "Git replied: " . 
+                    implode("\n", $this->out) .
+                    PHP_EOL;
+                $this->out = null;
+
+                chdir(implode("/", [
+                    getcwd(),
+                    "..",
+                    ".."
+                ]));
             }
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
