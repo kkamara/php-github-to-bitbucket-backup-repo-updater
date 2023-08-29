@@ -31,7 +31,10 @@ class MainClass extends stdClass
                 ($bitbucketDirExists ? "true" : "false") .
                 PHP_EOL;
             if ($bitbucketDirExists) {
-                die;
+                throw new Exception(
+                    "The bitbucket folder already exists in current directory." .
+                    PHP_EOL
+                );
             }
             mkdir($bitbucketDir);
         } catch (Exception $e) {
