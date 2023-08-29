@@ -17,21 +17,23 @@ class MainClass extends stdClass
 
     public function handle() {        
         try {
-            echo "Making bitbucket directory:".
-                implode(
-                    '/', 
-                    [
-                        getcwd(), 
-                        'bitbucket',
-                    ]
-                ).PHP_EOL;
-            mkdir(implode(
-                '/',
+            $bitbucketDir = implode(
+                '/', 
                 [
                     getcwd(), 
                     'bitbucket',
                 ]
-            ));
+            );
+            echo "Making bitbucket directory: " .
+                $bitbucketDir.PHP_EOL;
+            $bitbucketDirExists = true === file_exists($bitbucketDir);
+            echo "Directory already exists? " . 
+                ($bitbucketDirExists ? "true" : "false") .
+                PHP_EOL;
+            if ($bitbucketDirExists) {
+                die;
+            }
+            mkdir($bitbucketDir);
         } catch (Exception $e) {
             echo print_r($e->getMessage(), true);
         }
