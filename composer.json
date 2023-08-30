@@ -2,6 +2,16 @@
     "name": "kkamara/ghbbupdater",
     "version": "1.0.0",
     "description": ":computer: (29-Aug-2023) Compatible with Windows, MacOS & Linux.",
+    "keywords": [
+        "github",
+        "updater",
+        "migrations",
+        "binary",
+        "version-control",
+        "bitbucket",
+        "vc",
+        "cli-tool"
+    ],
     "authors": [
         {
             "name": "Kelvin Kamara",
