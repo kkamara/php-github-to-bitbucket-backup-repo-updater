@@ -70,9 +70,9 @@ make stop  # stop your docker container
 
 [old Github to bitbucket backup repo updater.](https://github.com/kkamara/github-to-bitbucket-backup-repo-updater)
 
-[PHP Docker Skeleton](https://github.com/kkamara/php-docker-skeleton)
+[PHP Docker Skeleton.](https://github.com/kkamara/php-docker-skeleton)
 
-[Python Docker Skeleton](https://github.com/kkamara/python-docker-skeleton)
+[Python Docker Skeleton.](https://github.com/kkamara/python-docker-skeleton)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
