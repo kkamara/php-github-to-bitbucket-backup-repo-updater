@@ -8,7 +8,7 @@
 
 ```bash
 # Set a config.json in your current working directory at your terminal.
-composer require kkamara/ghbbupdater
+git clone https://github.com/kkamara/ghbbupdater
 composer i
 composer start
 ```
@@ -40,7 +40,7 @@ Update `config.json` with your github and bitbucket remote urls for your repos.
 ```
 
 ```bash
-composer require kkamara/ghbbupdater
+git clone https://github.com/kkamara/ghbbupdater
 # composer install
 composer i
 ```
