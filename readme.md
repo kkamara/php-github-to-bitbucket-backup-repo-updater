@@ -7,8 +7,9 @@
 ## Quickstart
 
 ```bash
-# Set a config.json in your current working directory at your terminal.
 git clone https://github.com/kkamara/ghbbupdater
+cd ghbbupdater
+# Update config.json in your ghbbupdater directory.
 composer i
 composer start
 ```
@@ -41,6 +42,7 @@ Update `config.json` with your github and bitbucket remote urls for your repos.
 
 ```bash
 git clone https://github.com/kkamara/ghbbupdater
+cd ghbbupdater
 # composer install
 composer i
 ```
