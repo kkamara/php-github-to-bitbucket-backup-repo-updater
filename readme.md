@@ -70,11 +70,19 @@ make stop  # stop your docker container
 
 ## Misc
 
-[old Github to Bitbucket Backup Repo Updater.](https://github.com/kkamara/github-to-bitbucket-backup-repo-updater)
+[See Github to Bitbucket Backup Repo Updater](https://github.com/kkamara/github-to-bitbucket-backup-repo-updater) made with NodeJS.
 
-[PHP Docker Skeleton.](https://github.com/kkamara/php-docker-skeleton)
+[See PHP ReactJS Boilerplate](https://github.com/kkamara/php-reactjs-boilerplate).
 
-[Python Docker Skeleton.](https://github.com/kkamara/python-docker-skeleton)
+[See ReactJS Boilerplate](https://github.com/kkamara/reactjs-boilerplate).
+
+[See PHP Scraper](https://github.com/kkamara/php-scraper).
+
+[See NodeJS ReactJS Boilerplate](https://github.com/kkamara/nodejs-reactjs-boilerplate).
+
+[PHP Docker Skeleton](https://github.com/kkamara/php-docker-skeleton).
+
+[Python Docker Skeleton](https://github.com/kkamara/python-docker-skeleton).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
