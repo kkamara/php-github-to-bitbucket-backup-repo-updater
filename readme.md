@@ -70,7 +70,7 @@ make stop  # stop your docker container
 
 ## Misc
 
-[See Github to Bitbucket Backup Repo Updater](https://github.com/kkamara/github-to-bitbucket-backup-repo-updater) made with NodeJS.
+[See Github to Bitbucket Backup Repo Updater](https://github.com/kkamara/nodejs-github-to-bitbucket-backup-repo-updater) made with NodeJS.
 
 [See PHP ReactJS Boilerplate](https://github.com/kkamara/php-reactjs-boilerplate).
 
