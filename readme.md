@@ -29,11 +29,11 @@ Update `config.json` with your github and bitbucket remote urls for your repos.
     "kelvinkamara.com": {
       "github": {
         "origin": "https://github.com/kkamara/kelvinkamara.com",
-        "branch": "develop"
+        "branch": "main"
       },
       "bitbucket": {
         "origin": "git@bitbucket.org:kkamara2/kelvinkamara.com",
-        "branch": "develop"
+        "branch": "main"
       }
     }
   }
