@@ -1,12 +1,12 @@
 {
   "repos": {
-    "ghbbupdater": {
+    "php-github-to-bitbucket-backup-repo-updater": {
       "github": {
-        "origin": "https://github.com/kkamara/ghbbupdater",
+        "origin": "https://github.com/kkamara/php-github-to-bitbucket-backup-repo-updater",
         "branch": "main"
       },
       "bitbucket": {
-        "origin": "git@bitbucket.org:kkamara2/ghbbupdater",
+        "origin": "git@bitbucket.org:kkamara2/php-github-to-bitbucket-backup-repo-updater",
         "branch": "main"
       }
     },

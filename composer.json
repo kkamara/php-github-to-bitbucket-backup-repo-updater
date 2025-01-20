@@ -1,5 +1,5 @@
 {
-    "name": "kkamara/ghbbupdater",
+    "name": "kkamara/php-github-to-bitbucket-backup-repo-updater",
     "version": "1.0.0",
     "description": ":computer: (29-Aug-2023) Compatible with Windows, MacOS & Linux.",
     "keywords": [
@@ -20,7 +20,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/kkamara/ghbbupdater",
+    "homepage": "https://github.com/kkamara/php-github-to-bitbucket-backup-repo-updater",
     "license": "BSD-3-Clause",
     "scripts": {
         "start": [

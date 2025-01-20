@@ -1,15 +1,15 @@
 <img src="https://github.com/kkamara/useful/raw/main/MainClass.png" alt="MainClass.png" width=""/>
 
-# github-to-bitbucket-backup-repo-updater
+# php-github-to-bitbucket-backup-repo-updater
 
 :computer: (29-Aug-2023) Compatible with Windows, MacOS & Linux.
 
 ## Quickstart
 
 ```bash
-git clone https://github.com/kkamara/ghbbupdater
-cd ghbbupdater
-# Update config.json in your ghbbupdater directory.
+git clone https://github.com/kkamara/php-github-to-bitbucket-backup-repo-updater
+cd php-github-to-bitbucket-backup-repo-updater
+# Update config.json in your php-github-to-bitbucket-backup-repo-updater directory.
 composer i
 composer start
 ```
@@ -41,8 +41,8 @@ Update `config.json` with your github and bitbucket remote urls for your repos.
 ```
 
 ```bash
-git clone https://github.com/kkamara/ghbbupdater
-cd ghbbupdater
+git clone https://github.com/kkamara/php-github-to-bitbucket-backup-repo-updater
+cd php-github-to-bitbucket-backup-repo-updater
 # composer install
 composer i
 ```
